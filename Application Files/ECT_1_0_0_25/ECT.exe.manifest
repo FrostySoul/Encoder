@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ECT.exe" version="1.0.0.25" publicKeyToken="ac4696fa1ac25fc9" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="0001_Encoder.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ECT" version="1.0.0.1" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ECT.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ECT.exe" size="159648">
+      <assemblyIdentity name="ECT" version="1.0.0.1" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ST43Op0lWfvNUHvhDFmMBMmYwYSpYotxpv/o1MRMTPg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="0001_Encoder.ico" size="4846">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>5MMwHLT8mMbmO5F1A2NmPGNMZvSIKYu89LeTyZLyvy4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ECT.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6N7MliNbVJSIAIPrecIshMbZ7zEoKLr5SQvud4LDUOw=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=RON\Ronald" issuerKeyHash="5eec85da876de403458afa5b4e9681f56e4a8700" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>bUQ2YxBvbzVUzG8CT1q3KSvMIqbSvtwsPxn1p3mfG3U=</DigestValue></Reference></SignedInfo><SignatureValue>hWmSNdv7+Gyq8EGaaKs5tNKnoYDi2/fz7SWHFKPqQ/G+ydCe1xI1o2kfRr9XV/rUQ868XIEgkULQatuCazfVEWNaMqXrlF+NrCEgQrZbejLlcu1Ydj/BLhL6RuafEF90GAzJUeKFijd0ikVwS8DbOOCAaEGGiwGknQ7GvhKcbW8=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>kUQxVSLXhTJ+i18q8dWrO3xdtwHRh+Zmy8GrZ3Fwo2cAc+shtuEahRfP3k50N7iZNxpWYVwS2qh/BF7JH4SUVVO9cqzXWijE431ocDPyP7y6asMscgHG/ik0pltSDw3KluX01/BH5qzTjXopkmKG2GQTs77kmrJQ3CJ2tyo86Mc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="751b9f79a7f5193f2cdcbed2a622cc2b29b75a4f026fcc54356f6f106336446d" Description="" Url=""><as:assemblyIdentity name="ECT.exe" version="1.0.0.25" publicKeyToken="ac4696fa1ac25fc9" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=RON\Ronald</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>K5TXnKcG4/3ipfn84zDT+mNf992vtN/zx38zgcnJM9I=</DigestValue></Reference></SignedInfo><SignatureValue>GMuBJhSk+HqYzgD2F6sNrUBMUnUEF0c1NLvQ7Tq7QPpE66WIdIiogmPiHkJvHPnQBX6sfMis1X3AsXLVqAtVqAvLgAnRgTNdT5h1UngvLkK/zfnxgH0q9DB1Ag0z3Cke3sjcVW3eCylK2lri7H78nybXAITu3mo4fa+E5JReDao=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>kUQxVSLXhTJ+i18q8dWrO3xdtwHRh+Zmy8GrZ3Fwo2cAc+shtuEahRfP3k50N7iZNxpWYVwS2qh/BF7JH4SUVVO9cqzXWijE431ocDPyP7y6asMscgHG/ik0pltSDw3KluX01/BH5qzTjXopkmKG2GQTs77kmrJQ3CJ2tyo86Mc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBwTCCASqgAwIBAgIQGN0VbAuV/KVDURt6NrTDljANBgkqhkiG9w0BAQsFADAfMR0wGwYDVQQDHhQAUgBPAE4AXABSAG8AbgBhAGwAZDAeFw0xNTExMTMyMDA4MTlaFw0xNjExMTMwMjA4MTlaMB8xHTAbBgNVBAMeFABSAE8ATgBcAFIAbwBuAGEAbABkMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCRRDFVIteFMn6LXyrx1as7fF23AdGH5mbLwatncXCjZwBz6yG24RqFF8/eTnQ3uJk3GlZhXBLaqH8EXskfhJRVU71yrNdaKMTjfWhwM/I/vLpqwyxyAcb+KTSmW1IPDcqW5fTX8EfmrNONeimSYobYZBOzvuSaslDcIna3KjzoxwIDAQABMA0GCSqGSIb3DQEBCwUAA4GBACwIR57dUxUur8P108ySNjbfs6uBuV8EzPoUv4AoEkyKOTW9zdbBlrAmKkV3z3wwKPcialHlR6vuvG0cOPJsC4z7OIfzc+3SD1rGM0OhZRVmy2S5OBC0ukaZBsDUpxV0yR3bPhrULwVa8/PihbR+Ep/SKq8BdrYfaPvEx1eEhn0X</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
